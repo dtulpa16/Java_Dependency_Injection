@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        Weapon bingus = new LaserCannon("dookie", 1500);
-        Weapon lego = new DraugerBow("lil brick", 269);
-        Robot robot_one = new Robot(bingus);
-        Robot robot_two = new Robot(lego);
+        Weapon laser = new LaserCannon("laser", 1500);
+        Attacker robot_one = new Robot(laser);
         robot_one.Attack();
-        robot_two.Attack();
+
+        Attacker dragonBorn = new DragonBorn("Nord",150);
+        dragonBorn.Attack();
     }
 }
